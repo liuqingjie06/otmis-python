@@ -1,14 +1,14 @@
+# _*_ coding: utf-8 _*_
 from django.conf.urls import patterns, include, url
-from main.views import hello
-import tdcenter.urls
-
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
-
+from tdcenter.views import *
+'''
+	工程中心主页url
+'''
 urlpatterns = patterns('',
-	url(r'^test/$', hello, name='hello'),
-	url(r'^center/', include('tdcenter.urls')),
+	url(r'^main/$', main),
+	url(r'^stuff/$', stuff),
+	url(r'^research/$', research),
+	url(r'^equipment/$', equipment),
     # Examples:
     # url(r'^$', 'railmaps.views.home', name='home'),
     # url(r'^railmaps/', include('railmaps.foo.urls')),
