@@ -9,7 +9,7 @@ OTMIS 轨道管理信息系统
 		数据的分析
 		安全生产模块
 
-'''
+'''python
 for i in files:
 	print i.readline()
 	if i>12:
